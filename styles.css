@@ -1,0 +1,132 @@
+/* Custom CSS for Seminar Registration Form */
+/* Mengatur tampilan utama halaman */
+legend{ /* Mengatur posisi legend di tengah */
+    text-align: center; /* Posisi teks di tengah */
+}
+
+header h1,h2{/* Header */
+    background-color:#f8f9fa; /* Warna latar belakang header */
+    text-align: center; /* Memusatkan teks */
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal jika ada tinggi tertentu */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.header-image {/* Gambar logo di header */
+    width:100%; /* Lebar gambar memenuhi elemen */
+    height:50%; /* Tinggi gambar 50% dari elemen */
+    object-fit: cover; /* Memastikan gambar menutupi area */
+    display: block; /* Menampilkan sebagai blok */
+    margin: 0; /* Menghilangkan margin */
+    padding: 0 !important; /* Menghilangkan padding dengan prioritas */
+}
+
+body {
+    font-family: DM Serif Text; /* Menggunakan font DM Serif Text */
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
+    color: #343a40; /* Warna teks abu-abu gelap */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+/* Form Container */
+.container {
+    max-width: 800px; /* Lebar maksimum container */
+    margin: 20px auto; /* Posisi di tengah dengan jarak 20px dari atas dan bawah */
+    padding: 20px; /* Padding di dalam container */
+    background: rgb(255, 255, 255); /* Warna latar belakang putih */
+    border-radius: 12px; /* Membuat sudut elemen membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan ringan */
+}
+
+/* Form Elements */
+.input-group-text {
+    background-color: #70a2ef; /* Warna latar belakang ikon input */
+    color: white; /* Warna teks ikon input */
+}
+
+/* Label untuk pilihan jenis kelamin */
+.form-check-label {
+    margin-left: 5px; /* Memberi jarak antara radio button dan label */
+}
+
+/* Tombol di dalam form */
+.button-container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Posisi horizontal di tengah */
+    gap: 10px; /* Jarak antara tombol */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px; /* Jarak atas footer */
+    background-color: #343a40; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    text-align: center; /* Teks berada di tengah */
+    padding-top: 0; /* Menghilangkan padding atas */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1, .header h2 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+    .container {
+        padding: 10px; /* Padding dikurangi pada layar kecil */
+    }
+}
+
+/* Styling khusus di bukti daftar */
+header {/*header di bukti daftar */
+    text-align: center; /* Teks di tengah */
+    padding: 0 !important; /* Menghapus padding default */
+    font-family: "DM serif"; /* Font khusus DM Serif */
+    font-weight: 2; /* Ketebalan font rendah (tidak umum, mungkin perlu koreksi) */
+}
+
+.logo-image {/* Styling untuk gambar logo di bukti daftar */
+    width: 80px; /* Lebar gambar logo */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    margin: 10px; /* Jarak luar gambar */
+}
+
+.bukti-daftar { /* Custom CSS untuk kotak bukti pendaftaran */
+    border: 2px solid #8196ad; /* Border biru abu-abu */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px; /* Ruang di dalam kotak */
+    max-width: 600px; /* Lebar maksimal kotak */
+    margin: 50px auto; /* Posisi kotak di tengah dengan jarak 50px dari atas dan bawah */
+    background-color: #f9f9f9; /* Warna latar belakang kotak */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan di sekitar kotak */
+}
+
+/* Styling judul dan subjudul dalam bukti daftar */
+.bukti-daftar h3, h5{
+    color: #007bff; /* Warna biru untuk judul */
+    text-align: center; /* Posisi judul di tengah */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    font-style: bold; /* Membuat teks tebal (sebaiknya gunakan font-weight: bold) */
+}
+
+/* Styling paragraf di dalam bukti daftar */
+.bukti-daftar p {
+    font-size: 1rem; /* Ukuran font 1 rem (16px default) */
+    line-height: 1.6; /* Jarak antar baris */
+    color: #333; /* Warna teks abu-abu gelap */
+    text-align: justify; /* Teks rata kiri dan kanan */
+}
+
+/* Styling untuk list (daftar) dalam bukti daftar */
+.bukti-daftar li{
+    text-align: justify; /* Rata kiri dan kanan untuk list */
+}
+
+/* Styling footer dalam bukti daftar */
+.bukti-daftar .footer {
+    margin-top: 20px; /* Jarak atas footer */
+    text-align: right; /* Posisi footer di kanan */
+    font-style: italic; /* Teks miring */
+    color: #555; /* Warna teks abu-abu */
+}
